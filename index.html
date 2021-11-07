@@ -282,7 +282,7 @@
                    placeholder="Enter your name" />
         </div>
         <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
+        <button type="button" value="submit">
 		<a href="/HCI/study.html">Submit</a> 
 		</button>
     </form>
@@ -303,7 +303,7 @@
         <!-- Template Main JS File -->
         <script >
 		var dict = {}
-		form.addEventListener("submit", function(e) {
+		form.addEventListener("button", function(e) {
 		  e.preventDefault();
 		  dict["name"]=document.getElementById('name').value;
 		  localStorage.setItem("name", document.getElementById('name').value)
