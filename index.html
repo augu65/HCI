@@ -306,11 +306,11 @@
 		form.addEventListener("submit", function(e) {
 		  e.preventDefault();
 		  dict["name"]=document.getElementById('name').value;
-		  sessionStorage.setItem("name", document.getElementById('name').value)
+		  localStorage.setItem("name", document.getElementById('name').value)
 		  var data = new FormData(form);
 		  for (const [name,value] of data) {
 		   dict[name]=value;
-		   sessionStorage.setItem(name, value)
+		   localStorage.setItem(name, value)
 		  }
 		})
 		</script>
