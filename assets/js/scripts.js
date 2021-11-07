@@ -182,12 +182,12 @@
 	const button = document.querySelector('button');
 	button.addEventListener('click', event => {
 		let data = {};
-		data['age'] = sessionStorage.getItem('age');
-		data['education']= sessionStorage.getItem('education');
-		data['gender']= sessionStorage.getItem('gender');
-		data['name'] = sessionStorage.getItem('name');
-		data['proficiency'] = sessionStorage.getItem('proficiency');
-		data['spend'] = sessionStorage.getItem('spend');
+		data['age'] = localStorage.getItem('age');
+		data['education']= localStorage.getItem('education');
+		data['gender']= localStorage.getItem('gender');
+		data['name'] = localStorage.getItem('name');
+		data['proficiency'] = localStorage.getItem('proficiency');
+		data['spend'] = localStorage.getItem('spend');
 		data['keypress'] = list
 		console.log(data)
 	});
