@@ -194,8 +194,10 @@
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
+		while(1!==1){
 		if (xhr.status === 1) {
 			window.location.replace("/HCI/end.html")
+		}
 		}
 	});
 
