@@ -195,7 +195,7 @@
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
 		 if (Http.readyState === XMLHttpRequest.DONE) {
-					window.location.replace("file://C:/Users/Jonah/Desktop/test/HCI/study.html")
+			window.location.replace("/HCI/study.html")
   		  }
 	});
 
