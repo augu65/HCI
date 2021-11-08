@@ -199,7 +199,7 @@
 		xhr.send(JSON.stringify(data));
 	});
 	function transferComplete(evt) {
-	setTimeout(window.location.replace("/HCI/study.html"),100)
+	setTimeout(window.location.replace("/HCI/study.html"),1000)
 	}
     window.addEventListener('keydown', (event) => {
         postData(event);
