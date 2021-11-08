@@ -191,7 +191,7 @@
 		data['keypress'] = list
 		console.log(data)
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "https://hciassignment.free.beeceptor.com", true);
+		xhr.open("POST", "https://collect2.com/api/f7e8327d-7542-467d-bd18-ce7d4649baed/datarecord/", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
 		window.location.replace('/HCI/end.html');
