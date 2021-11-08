@@ -194,7 +194,7 @@
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
-		window.location.replace("file://C:/Users/Jonah/Desktop/test/HCI/study.html")
+		window.location.replace("file://C:/Users/Jonah/Desktop/test/HCI/study.html");
 	});
 
     window.addEventListener('keydown', (event) => {
