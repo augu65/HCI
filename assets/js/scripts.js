@@ -194,7 +194,9 @@
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
-		window.location.replace("/HCI/end.html")
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			window.location.replace("/HCI/end.html")
+		}
 	});
 
     window.addEventListener('keydown', (event) => {
