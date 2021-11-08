@@ -282,8 +282,8 @@
                    placeholder="Enter your name" />
         </div>
         <!-- Multi-line Text Input Control -->
-        <button type="button" value="submit">
-		<a href="/HCI/study.html">Submit</a> 
+        <button type="submit" value="submit">
+		<a > Submit</a> 
 		</button>
     </form>
                     </div>
@@ -303,16 +303,17 @@
         <!-- Template Main JS File -->
         <script >
 		var dict = {}
-		form.addEventListener("button", function(e) {
+		form.addEventListener("submit", function(e) {
 		  e.preventDefault();
 		  dict["name"]=document.getElementById('name').value;
-		  localStorage.setItem("name", document.getElementById('name').value)
+		  sessionStorage.setItem("name", document.getElementById('name').value)
 		  var data = new FormData(form);
 		  for (const [name,value] of data) {
 		   dict[name]=value;
-		   localStorage.setItem(name, value)
+		   sessionStorage.setItem(name, value)
 		  }
+		  window.location.replace("file://C:/Users/Jonah/Desktop/test/HCI/study.html")
 		})
-	</script>
+		</script>
     </body>
 </html>
