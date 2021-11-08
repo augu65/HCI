@@ -192,7 +192,6 @@
 		console.log(data)
 		var xhr = new XMLHttpRequest();
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
-		xhr.setRequestHeader('Access-Control-Allow-Origin','https://augu65/HCI');
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
 		window.location.replace('/HCI/end.html');
