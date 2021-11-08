@@ -191,7 +191,7 @@
 		data['keypress'] = list
 		console.log(data)
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "https://collect2.com/api/f7e8327d-7542-467d-bd18-ce7d4649baed/datarecord/", true);
+		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Access-Control-Allow-Origin','https://augu65/HCI');
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
