@@ -193,12 +193,12 @@
 		var xhr = new XMLHttpRequest();
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
-		xhr.send(JSON.stringify(data));
 		 xhr.onload = function (e) {
   if (xhr.readyState === 4) {
     if (xhr.status === 200) {
 			window.location.replace("/HCI/study.html")
   		  }}};
+		xhr.send(JSON.stringify(data));
 	});
 
     window.addEventListener('keydown', (event) => {
