@@ -193,7 +193,8 @@
 		var xhr = new XMLHttpRequest();
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
-			window.location.replace("/HCI/end.html");
+		xhr.send(JSON.stringify(data));
+		window.location.replace("/HCI/end.html");
 	});
 
     window.addEventListener('keydown', (event) => {
