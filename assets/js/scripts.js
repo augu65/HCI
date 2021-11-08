@@ -195,9 +195,9 @@
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
 		xhr.onload = function() {
-  if (xhr.status == 200) { 
-	  window.location.replace("/HCI/study.html")
-  }}
+  		if (xhr.status == 200) { 
+	  		window.location.replace("/HCI/end.html")
+  		}}
 	});
 
     window.addEventListener('keydown', (event) => {
