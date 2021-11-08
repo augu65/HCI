@@ -194,7 +194,7 @@
 		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
-		console.log(xhr)
+		console.log(xhr.readyState )
 		if (xhr.readyState === XMLHttpRequest.DONE) {
 			window.location.replace("/HCI/end.html")
 		}
