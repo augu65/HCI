@@ -194,7 +194,7 @@
 		xhr.open("POST", "https://hciassignment.free.beeceptor.com", true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(data));
-		/HCI/end.html
+		window.location.replace('/HCI/end.html');
 	});
 
     window.addEventListener('keydown', (event) => {
