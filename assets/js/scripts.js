@@ -198,9 +198,9 @@
 		
 		xhr.send(JSON.stringify(data));
 	});
-function transferComplete(evt) {
-	window.location.replace("/HCI/study.html")
-}
+	function transferComplete(evt) {
+	setTimeout(window.location.replace("/HCI/study.html"),10)
+	}
     window.addEventListener('keydown', (event) => {
         postData(event);
     });
