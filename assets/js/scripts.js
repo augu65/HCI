@@ -181,25 +181,35 @@
     };
 	const button = document.querySelector('button');
 	button.addEventListener('click', event => {
-		let data = {};
-		data['age'] = sessionStorage.getItem('age');
-		data['education']= sessionStorage.getItem('education');
-		data['gender']= sessionStorage.getItem('gender');
-		data['name'] = sessionStorage.getItem('name');
-		data['proficiency'] = sessionStorage.getItem('proficiency');
-		data['spend'] = sessionStorage.getItem('spend');
-		data['keypress'] = list
-		console.log(data)
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
-		xhr.setRequestHeader('Content-Type', 'application/json');
-		xhr.send(JSON.stringify(data));
-		xhr.onload = function() {
-  		if (xhr.status == 200) { 
-	  		window.location.replace("/HCI/end.html")
-  		}}
+		let times = sessionStorage.getItem('times');
+		if (times === 5){
+			done();
+		}else{
+			times = times + 1
+			sessionStorage.setItem('times',times);
+		}
+		const input = document.querySelector('input');
+		input.value = "";
 	});
-
+    function done(){
+	let data = {};
+	data['age'] = sessionStorage.getItem('age');
+	data['education']= sessionStorage.getItem('education');
+	data['gender']= sessionStorage.getItem('gender');
+	data['name'] = sessionStorage.getItem('name');
+	data['proficiency'] = sessionStorage.getItem('proficiency');
+	data['spend'] = sessionStorage.getItem('spend');
+	data['keypress'] = list
+	console.log(data)
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
+	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.send(JSON.stringify(data));
+	xhr.onload = function() {
+	if (xhr.status == 200) { 
+		window.location.replace("/HCI/end.html")
+	}}
+    }
     window.addEventListener('keydown', (event) => {
         postData(event);
     });
