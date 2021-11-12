@@ -182,33 +182,70 @@
     };
 	const button = document.querySelector('button');
 	button.addEventListener('click', event => {
-		let sent_list = ["this is 2", "this is 3","this is 4","this is 5"];
+		let sent_list = {
+			'jonah stegman':'this is jonah',
+			'jason ceci':'this is jason',
+			'jordan evans':'this is jordan',
+			'sohail habib': 'this is sohail'
+		};
 		let times = parseInt(sessionStorage.getItem('times'),10);
-		if (times == 4){
-			let data = {};
-			data['age'] = sessionStorage.getItem('age');
-			data['education']= sessionStorage.getItem('education');
-			data['gender']= sessionStorage.getItem('gender');
-			data['name'] = sessionStorage.getItem('name');
-			data['proficiency'] = sessionStorage.getItem('proficiency');
-			data['spend'] = sessionStorage.getItem('spend');
-			data['keypress'] = list
-			var xhr = new XMLHttpRequest();
-			xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
-			xhr.setRequestHeader('Content-Type', 'application/json');
-			xhr.send(JSON.stringify(data));
-			xhr.onload = function() {
-			if (xhr.status == 200) { 
-				window.location.replace("/HCI/end.html")
-			}}
-		}else{
-			times = times + 1
-			sessionStorage.setItem('times',times);
-		}
-		const input = document.getElementById('name');
+		let odd = parseInt(sessionStorage.getItem('odd'),10);
+		let random = parseInt(sessionStorage.getItem('random'),10);
+		const input = document.getElementById('name_input');
+		const name = document.getElementById('name');
 		const sentence = document.getElementById('sentence');
 		const input2 = document.getElementById('sentence_input');
-		sentence.innerHTML = sent_list[(times-1)];
+		if (odd == 0){
+			sessionStorage.setItem('odd', 1);
+			if(random < 50){
+			name.hidden =false;
+			input.hidden = false;
+			sentence.hidden = true;
+			input2.hidden = true;
+			}else{
+			name.hidden =true;
+			input.hidden = true;
+			sentence.hidden = false;
+			input2.hidden = false;
+			}
+		}else{
+			random = Math.floor((Math.random() * 100) + 1);
+			sessionStorage.setItem('random',random);
+			sessionStorage.setItem('odd', 0);
+			if(random > 50){
+				name.hidden =false;
+				input.hidden = false;
+				sentence.hidden = true;
+				input2.hidden = true;
+			}else{
+				name.hidden =true;
+				input.hidden = true;
+				sentence.hidden = false;
+				input2.hidden = false;
+			}
+			if (times == 4){
+				let data = {};
+				data['age'] = sessionStorage.getItem('age');
+				data['education']= sessionStorage.getItem('education');
+				data['gender']= sessionStorage.getItem('gender');
+				data['name'] = sessionStorage.getItem('name');
+				data['proficiency'] = sessionStorage.getItem('proficiency');
+				data['spend'] = sessionStorage.getItem('spend');
+				data['keypress'] = list
+				var xhr = new XMLHttpRequest();
+				xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.send(JSON.stringify(data));
+				xhr.onload = function() {
+				if (xhr.status == 200) { 
+					window.location.replace("/HCI/end.html")
+				}}
+			}else{
+				times = times + 1
+				sessionStorage.setItem('times',times);
+			}
+		}
+		sentence.innerHTML = sent_list[sessionStorage.getItem('name')];
 		input.value = "";
 		input2.value = "";
 	});
