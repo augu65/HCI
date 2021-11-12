@@ -156,7 +156,7 @@
      */
     const postData = (event) => {
         // Create request object
-        
+        let id = sessionStorage.getItem('times');
         // Setup transmit data
         var inputName = String(event.srcElement.attributes[1].value);
         var sentenceId = inputName.slice(-1);
@@ -166,7 +166,7 @@
         var shiftKey = event.shiftKey ? 1 : 0;
 		var data = {
 		"uuid" : uuid,
-		"sentenceId": sentenceId,
+		"sentenceId": sentenceId+"."+id,
 		"keyEvent": event.type,
 		"keyCode": event.keyCode,
 		"keyChar": event.key,
@@ -175,19 +175,51 @@
 		"shiftKey": shiftKey,
 		"timestamp" : new Date().getTime()
 		};
+		console.log(data);
         // Uncomment to enable debugging
         list.push(data);
         
     };
 	const button = document.querySelector('button');
 	button.addEventListener('click', event => {
+<<<<<<< HEAD
+		let sent_list = ["this is 2", "this is 3","this is 4","this is 5"];
+		let times = parseInt(sessionStorage.getItem('times'),10);
+		if (times == 4){
+			let data = {};
+			data['age'] = sessionStorage.getItem('age');
+			data['education']= sessionStorage.getItem('education');
+			data['gender']= sessionStorage.getItem('gender');
+			data['name'] = sessionStorage.getItem('name');
+			data['proficiency'] = sessionStorage.getItem('proficiency');
+			data['spend'] = sessionStorage.getItem('spend');
+			data['keypress'] = list
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
+			xhr.setRequestHeader('Content-Type', 'application/json');
+			xhr.send(JSON.stringify(data));
+			xhr.onload = function() {
+			if (xhr.status == 200) { 
+				window.location.replace("/HCI/end.html")
+			}}
+=======
 		let times = sessionStorage.getItem('times');
 		if (times === 5){
 			done();
+>>>>>>> 39ef895b78e6a4743172626957ed2b2aeb0bf60e
 		}else{
 			times = times + 1
 			sessionStorage.setItem('times',times);
 		}
+<<<<<<< HEAD
+		const input = document.getElementById('name');
+		const sentence = document.getElementById('sentence');
+		const input2 = document.getElementById('sentence_input');
+		sentence.innerHTML = sent_list[(times-1)];
+		input.value = "";
+		input2.value = "";
+	});
+=======
 		const input = document.querySelector('input');
 		input.value = "";
 	});
@@ -210,6 +242,7 @@
 		window.location.replace("/HCI/end.html")
 	}}
     }
+>>>>>>> 39ef895b78e6a4743172626957ed2b2aeb0bf60e
     window.addEventListener('keydown', (event) => {
         postData(event);
     });
