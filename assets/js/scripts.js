@@ -239,12 +239,7 @@
 			}
 			if (times == 4){
 				let data = {};
-				data['age'] = sessionStorage.getItem('age');
-				data['education']= sessionStorage.getItem('education');
-				data['gender']= sessionStorage.getItem('gender');
 				data['name'] = sessionStorage.getItem('name');
-				data['proficiency'] = sessionStorage.getItem('proficiency');
-				data['spend'] = sessionStorage.getItem('spend');
 				data['keypress'] = list
 				var xhr = new XMLHttpRequest();
 				xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
