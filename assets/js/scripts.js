@@ -259,7 +259,9 @@
 				sessionStorage.setItem('times',times);
 			}
 		}
-		sentence.innerHTML = sent_list[sessionStorage.getItem('name')];
+		if (sessionStorage.getItem('name') in sent_list){
+			sentence.innerHTML = sent_list[sessionStorage.getItem('name')];
+		}
 		input.value = "";
 		input2.value = "";
 	});
