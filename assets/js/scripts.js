@@ -183,10 +183,24 @@
 	const button = document.querySelector('button');
 	button.addEventListener('click', event => {
 		let sent_list = {
-			'jonah stegman':'this is jonah',
-			'jason ceci':'this is jason',
-			'jordan evans':'this is jordan',
-			'sohail habib': 'this is sohail'
+			"jason ceci":"apple the reason for this is because  I thought  apple has beautiful devices, though i have decided to stick with what has worked for me throughout the years",
+			"farhan chowdhury":"to solve these issues you should follow the directions on how to make your battery last longer which includes not leaving it plugged in to over charge and also letting the device die completely then charging it",
+			"sara el-shawa":"the disadvantages of not having a kindle as you saw is that you will have to buy the book in any book store or online, pay for shipping cost, but you will be able to feel the pages, you can lend the book to whoever you want and also you could keep it for your own library",
+			"jordan evans":"carrying  various chargers around is always a wise idea even if it means awkwardly sitting in a starbucks huddled around a used iphone.I enjoy samsung phones much more over iphones though i see the benefits of an apple smartphone device makes.",
+			"connor geddes":"getting my laptop to connect to my phones hotspot can be tiresome at times. especially when I am in bed or if outside in a backyard. It makes taking notes or looking up an address a real pain.",
+			"viraj guntamukkala":"they dont have the same procesing  power of a regular vidtuk but they make up for it with the endless number of applications that are available to aid us with almost every unthinkable task",
+			"sohail habib":"you also have features available like bookmarking websites like bibme which can cite websites for you", 
+			"fatemeh haghighi":"for me as franchise company most of our orders are coming from the website. imagines we close the store door but we are still getting orders from the web. Fate being on our side we could make such a high profit margin without the added overhead.",
+			"mahmoud hazari":"carrying  various chargers around is always a wise idea even if it means awkwardly sitting in a starbucks huddled around a used iphone.I enjoy samsung phones much more over iphones though i see the benefits of an apple smartphone device makes.", 
+			"nathan laundry":"well i personally do have a tablet and laptop but i prefer the laptop much more because it is bigger and easy to use because it has a keyboard unlike the apple tablet i've  adopted  over the year.",
+			"wan qing li":"battery life is definitely an issue, i am always looking for a place to plug ",
+			"cathrine nayrouz":"nowadays, technology is very helpful in my daily work environment because all of my school work are done through the use of computers.",
+			"sina radpour":"i would have to work many extra hours, if i was teaching these classes using traditional paper and pencil methods",
+			"yukun shi":"the yukon money count after the gold rush was higher than she thought.",
+			"jonah stegman":"and while they're certainly functional and easy to operate, my job may have ended in disaster itself if i did not have a phone and access to the web at all times to check information or being in touch with my boss",
+			"kevin sullivan":"i also load alot of music, pictures and apps on my samsung phone and it allows me to add an internal memory card for a few bucks unlike the iphone in order to get more space on your phone you have to use cloud device storage",
+			"kaitlin venneri":"nowadays, technology is very helpful in my daily work environment because all of my school work are done through the use of computers and i can stay connected"
+
 		};
 		let times = parseInt(sessionStorage.getItem('times'),10);
 		let odd = parseInt(sessionStorage.getItem('odd'),10);
