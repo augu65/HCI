@@ -252,7 +252,7 @@
 			}else{
 				times = times + 1
 				const iteration = document.getElementById('iterations');
-				iteration.innerHTML = "Iterations: "+times+"/10";
+				iteration.innerHTML = "Iterations: "+parseInt(times+1)+"/10";
 				console.log(iteration);
 				sessionStorage.setItem('times',times);
 			}
