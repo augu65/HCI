@@ -251,6 +251,8 @@
 				}}
 			}else{
 				times = times + 1
+				const iteration = document.getElementById('iterations');
+				iteration.innerHTML = "Iterations: "+times+"/10";
 				sessionStorage.setItem('times',times);
 			}
 		}
