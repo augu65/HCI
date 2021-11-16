@@ -237,7 +237,7 @@
 				sentence.hidden = false;
 				input2.hidden = false;
 			}
-			if (times == 4){
+			if (times == 9){
 				let data = {};
 				data['name'] = sessionStorage.getItem('name');
 				data['keypress'] = list
