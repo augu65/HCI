@@ -44,7 +44,7 @@
 
                     <div class="">
 			    <h2>Disclaimer</h2>
-			    <p>We are conduction a study to collect information on user typinging patterns. This study will have the user typing their name and a sentence 10 times.
+			    <p>We are conductiog a study to collect information on user typing patterns. This study will have the user typing their name and a sentence 10 times.
 The information you provide will be able to be traced back to you due to your name being a part of the dataset. However, all data used in the report will be anonymize. 
 				    The final paper will be the consolidated responses of all participants.</br>
 			The dataset will be permanently deleted on December 05, 2021.</br>
@@ -57,15 +57,10 @@ If you have any questions, please contact Jonah Stegman jstegman@uoguelph.ca.</p
             <label for="name" id="label-name">
                 Please enter your first and last name (please no capitals):
             </label>
-            <input type="text"
-                   id="name"
-				   value =""
-                   placeholder="firstname lastname" 
-				   required
-				   />
+            <input type="text" id="name" value ="" placeholder="firstname lastname" required autofocus/>
         </div>
         <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
+        <button id = "submits" type="submit" value="submit">
 		<a > Submit</a> 
 		</button>
     </form>
@@ -85,6 +80,13 @@ If you have any questions, please contact Jonah Stegman jstegman@uoguelph.ca.</p
 
         <!-- Template Main JS File -->
         <script >
+		document.getElementById("name")
+		    .addEventListener("keyup", function(event) {
+		    event.preventDefault();
+		    if (event.keyCode === 13) {
+			document.getElementById("submits").click();
+		    }
+		});
 		var dict = {}
 		form.addEventListener("submit", function(e) {
 		  e.preventDefault();
