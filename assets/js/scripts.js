@@ -214,6 +214,8 @@
 			if(random < 50){
 			name.hidden =false;
 			input.hidden = false;
+			input.autofocus = false;
+			input2.autofocus = true;
 			sentence.hidden = true;
 			input2.hidden = true;
 			}else{
@@ -221,6 +223,8 @@
 			input.hidden = true;
 			sentence.hidden = false;
 			input2.hidden = false;
+			input.autofocus = true;
+			input2.autofocus = false;
 			}
 		}else{
 			random = Math.floor((Math.random() * 100) + 1);
