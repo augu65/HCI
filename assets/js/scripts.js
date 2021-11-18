@@ -298,6 +298,9 @@
 
     window.addEventListener('keyup', (event) => {
         postData(event);
+	if (event.keyCode === 13) {
+		document.getElementById("submits").click();
+	}
     });
 	
   })()
