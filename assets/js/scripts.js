@@ -222,7 +222,7 @@
 		}
 		if (odd == 0){
 			sessionStorage.setItem('odd', 1);
-			if(random < 50){
+			if(random > 50 || random == 101){
 				name.hidden =false;
 				input.hidden = false;
 				input.autofocus = false;
