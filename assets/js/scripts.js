@@ -209,7 +209,7 @@
 		const name = document.getElementById('name');
 		const sentence = document.getElementById('sentence');
 		const input2 = document.getElementById('sentence_input');
-		if(random > 50){
+		if(random > 50 || random == 101){
 			if(input.value==""){
 				alert("please Enter your first and last name in the field below")
 				return;
@@ -222,7 +222,7 @@
 		}
 		if (odd == 0){
 			sessionStorage.setItem('odd', 1);
-			if(random > 50 || random == 101){
+			if(random > 50){
 				name.hidden =false;
 				input.hidden = false;
 				input.autofocus = false;
