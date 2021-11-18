@@ -211,7 +211,7 @@
 		const input2 = document.getElementById('sentence_input');
 		if (odd == 0){
 			sessionStorage.setItem('odd', 1);
-			if(random > 50){
+			if(random < 50){
 				name.hidden =false;
 				input.hidden = false;
 				input.autofocus = false;
