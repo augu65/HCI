@@ -51,14 +51,14 @@
                             <label style="display: none;">UUID</label></br>
                             <input style="display: none;" type="text" name="uuid" class="input" id="uuid" disabled></br>
                             <label id = "name">Please Type your Name:</label></br>
-                            <input type="text" name="sentence0" placeholder="Enter first and last name" id = "name_input" class="input"></br>
+                            <input type="text" name="sentence0" placeholder="Enter first and last name" id = "name_input" class="input" autofocus></br>
                             <label hidden id = "sentence">Jackie will budget for the most expensive zoology equipment.</label></br>
                             <input hidden type="text" name="sentence1" placeholder="Enter text here" id = "sentence_input" class="input"></br>
                         </form>
                     </div>
                 </div>
 				<div style="text-align: center">
-					<button style="width:10%; height:8%;" type="button"><a> Submit</a> 
+					<button style="width:10%; height:8%;" id="sumbits" type="button"><a> Submit</a> 
 				</div>
 		   </section>
             <!-- ======= End Main ======= -->
@@ -69,6 +69,20 @@
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
 		<script>
+		document.getElementById("name_input")
+		    .addEventListener("keyup", function(event) {
+		    event.preventDefault();
+		    if (event.keyCode === 13) {
+			document.getElementById("submits").click();
+		    }
+		});
+		document.getElementById("sentence_input")
+		    .addEventListener("keyup", function(event) {
+		    event.preventDefault();
+		    if (event.keyCode === 13) {
+			document.getElementById("submits").click();
+		    }
+		});
 		sessionStorage.setItem('times',0);
 		sessionStorage.setItem('random',100);
 		sessionStorage.setItem('odd', 0);
