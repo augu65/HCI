@@ -69,20 +69,6 @@
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
 		<script>
-		document.getElementById("name_input")
-		    .addEventListener("keyup", function(event) {
-		    event.preventDefault();
-		    if (event.keyCode === 13) {
-			document.getElementById("submits").click();
-		    }
-		});
-		document.getElementById("sentence_input")
-		    .addEventListener("keyup", function(event) {
-		    event.preventDefault();
-		    if (event.keyCode === 13) {
-			document.getElementById("submits").click();
-		    }
-		});
 		sessionStorage.setItem('times',0);
 		sessionStorage.setItem('random',101);
 		sessionStorage.setItem('odd', 0);
