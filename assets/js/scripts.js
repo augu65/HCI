@@ -212,19 +212,19 @@
 		if (odd == 0){
 			sessionStorage.setItem('odd', 1);
 			if(random < 50){
-			name.hidden =false;
-			input.hidden = false;
-			input.autofocus = false;
-			input2.autofocus = true;
-			sentence.hidden = true;
-			input2.hidden = true;
+				name.hidden =false;
+				input.hidden = false;
+				input.autofocus = false;
+				input2.autofocus = true;
+				sentence.hidden = true;
+				input2.hidden = true;
 			}else{
-			name.hidden =true;
-			input.hidden = true;
-			sentence.hidden = false;
-			input2.hidden = false;
-			input.autofocus = true;
-			input2.autofocus = false;
+				name.hidden =true;
+				input.hidden = true;
+				sentence.hidden = false;
+				input2.hidden = false;
+				input.autofocus = true;
+				input2.autofocus = false;
 			}
 		}else{
 			random = Math.floor((Math.random() * 100) + 1);
@@ -235,11 +235,15 @@
 				input.hidden = false;
 				sentence.hidden = true;
 				input2.hidden = true;
+				input.autofocus = false;
+				input2.autofocus = true;
 			}else{
 				name.hidden =true;
 				input.hidden = true;
 				sentence.hidden = false;
 				input2.hidden = false;
+				input.autofocus = true;
+				input2.autofocus = false;
 			}
 			if (times == 9){
 				let data = {};
