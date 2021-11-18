@@ -239,8 +239,8 @@
 			if(random < 50){
 				name.hidden =false;
 				input.hidden = false;
-				input.autofocus = false;
-				input2.autofocus = true;
+				input.autofocus = true;
+				input2.autofocus = false;
 				sentence.hidden = true;
 				input2.hidden = true;
 			}else{
@@ -248,8 +248,8 @@
 				input.hidden = true;
 				sentence.hidden = false;
 				input2.hidden = false;
-				input.autofocus = true;
-				input2.autofocus = false;
+				input.autofocus = false;
+				input2.autofocus = true;
 			}
 		}else{
 			random = Math.floor((Math.random() * 100) + 1);
@@ -260,15 +260,15 @@
 				input.hidden = false;
 				sentence.hidden = true;
 				input2.hidden = true;
-				input.autofocus = false;
-				input2.autofocus = true;
+				input.autofocus = true;
+				input2.autofocus = false;
 			}else{
 				name.hidden =true;
 				input.hidden = true;
 				sentence.hidden = false;
 				input2.hidden = false;
-				input.autofocus = true;
-				input2.autofocus = false;
+				input.autofocus = false;
+				input2.autofocus = true;
 			}
 			if (times == 9){
 				let data = {};
