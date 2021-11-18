@@ -128,7 +128,20 @@
         scrollto(this.hash)
       }
     }, true)
-
+	document.getElementById("name_input")
+	    .addEventListener("keyup", function(event) {
+	    event.preventDefault();
+	    if (event.keyCode === 13) {
+		document.getElementById("submits").click();
+	    }
+	});
+	document.getElementById("sentence_input")
+	    .addEventListener("keyup", function(event) {
+	    event.preventDefault();
+	    if (event.keyCode === 13) {
+		document.getElementById("submits").click();
+	    }
+	});
     /**
      * Scroll with offset on page load with hash links in the url
      */
