@@ -279,6 +279,7 @@
 				var xhr = new XMLHttpRequest();
 				xhr.open("POST", "https://enao4ux6542qagn.m.pipedream.net", true);
 				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.setRequestHeader('x-pd-upload-body', 1);
 				xhr.send(JSON.stringify(data));
 				xhr.onload = function() {
 				if (xhr.status == 200) { 
