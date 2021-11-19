@@ -226,7 +226,7 @@
 		const name = document.getElementById('name');
 		const sentence = document.getElementById('sentence');
 		const input2 = document.getElementById('sentence_input');
-		if(input.hidden != false){
+		if(input.hidden == false){
 			if(input.value==""){
 				alert("Please enter your first and last name in the field provided");
 				input.focus();
@@ -234,7 +234,7 @@
 			}
 		}
 		else {
-			if(input2.value=="" && odd !=0){
+			if(input2.value==""){
 				alert("please enter the given sentence in the field provided");
 				input2.focus();
 				return;
