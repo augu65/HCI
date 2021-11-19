@@ -229,12 +229,14 @@
 		if(input.hidden != false){
 			if(input.value==""){
 				alert("Please enter your first and last name in the field provided");
+				input.focus();
 				return;
 			}
 		}
 		else {
 			if(input2.value==""){
 				alert("please enter the given sentence in the field provided");
+				input2.focus();
 				return;
 			}
 		}
