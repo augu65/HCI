@@ -232,7 +232,7 @@
 				return;
 			}
 		}
-		if(input2.hidden == false){
+		else {
 			if(input2.value==""){
 				alert("please enter the given sentence in the field provided");
 				return;
