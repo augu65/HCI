@@ -212,12 +212,12 @@
 			"yukun shi":"the yukon money count after the gold rush was higher than she thought.",
 			"jonah stegman":"and while they're certainly functional and easy to operate, my job may have ended in disaster itself if i did not have a phone and access to the web at all times to check information or being in touch with my boss",
 			"kevin sullivan":"i also load alot of music, pictures and apps on my samsung phone and it allows me to add an internal memory card for a few bucks unlike the iphone in order to get more space on your phone you have to use cloud device storage",
-			"kaitlin venneri":"nowadays, technology is very helpful in my daily work environment because all of my school work are done through the use of computers and i can stay connected"
+			"kaitlin venneri":"nowadays, technology is very helpful in my daily work environment because all of my school work are done through the use of computers and i can stay connected",
 			"david flatla":"now that tablets are so widespread, and connectivity is available via wifi as well as data plans, the devices need to be secured in such a  way that secures both the device, its contents, and the networks it is connected to",
 			"amna  sohail":"apple is great however i am an android user and it is so hard to naviagate through the apple system on cell phone in my daily environment. computers are great as we need to take  information with us, however it is easy to carry the laptops to the patient vs having to run to the desk",
 			"kaylee bigelow":"some of the biggest challenges that i could find utilizing technology are that now a days anybody could find anything  by looking through your computer. They can see all of your private information with a click.",
 			"vinay khetwani":"two video tapes were found on this day in the town in waterloo. National services were called as the information on the tapes was top secret. the constable in charge said this set of tapes was stolen a week ago.",
-			"joshua guenther":"i do not like samsung mobile phones because they get virus easy and i don't like the interface. i work as a loss prevention guard and my manager always has a tablet on her which she brings everywhere she goes.",
+			"joshua guenther":"i do not like samsung mobile phones because they get virus easy and i don't like the interface. i work as a loss prevention guard and my manager always has a tablet on her which she brings everywhere she goes."
 		};
 		let times = parseInt(sessionStorage.getItem('times'),10);
 		let odd = parseInt(sessionStorage.getItem('odd'),10);
