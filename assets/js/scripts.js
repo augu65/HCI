@@ -234,7 +234,7 @@
 			}
 		}
 		else {
-			if(input2.value==""){
+			if(input2.value=="" && odd !=0){
 				alert("please enter the given sentence in the field provided");
 				input2.focus();
 				return;
