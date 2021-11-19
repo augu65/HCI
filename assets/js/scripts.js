@@ -131,14 +131,17 @@
 	document.getElementById("name_input")
 	    .addEventListener("keyup", function(event) {
 	    event.preventDefault();
-	    if (event.keyCode === 13) {
+	    const input = document.getElementById('name_input');
+	    if (event.keyCode === 13 && input.hidden==false) {
 		document.getElementById("submits").click();
 	    }
 	});
 	document.getElementById("sentence_input")
 	    .addEventListener("keyup", function(event) {
 	    event.preventDefault();
-	    if (event.keyCode === 13) {
+		const input = document.getElementById('sentence_input');
+		
+	    if (event.keyCode === 13 && input.hidden==false) {
 		document.getElementById("submits").click();
 	    }
 	});
