@@ -203,7 +203,8 @@
 			"amna  sohail":"apple is great however i am an android user and it is so hard to naviagate through the apple system on cell phone in my daily environment. computers are great as we need to take  information with us, however it is easy to carry the laptops to the patient vs having to run to the desk",
 			"kaylee bigelow":"some of the biggest challenges that i could find utilizing technology are that now a days anybody could find anything  by looking through your computer. They can see all of your private information with a click.",
 			"vinay khetwani":"two video tapes were found on this day in the town in waterloo. National services were called as the information on the tapes was top secret. the constable in charge said this set of tapes was stolen a week ago.",
-			"joshua guenther":"i do not like samsung mobile phones because they get virus easy and i don't like the interface. i work as a loss prevention guard and my manager always has a tablet on her which she brings everywhere she goes."
+			"joshua guenther":"i do not like samsung mobile phones because they get virus easy and i don't like the interface. i work as a loss prevention guard and my manager always has a tablet on her which she brings everywhere she goes.",
+			"evan switzer":"there are not disadvantagages  on electronics books, it has a dictionary which can be used just by clicking a word, you can highly anything with ease and revert the process, also you can make notes and not only that, you can carry hundreds of book in that device while a physical book you can only carry one or two due to the disize of the books"
 		};
 		let times = parseInt(sessionStorage.getItem('times'),10);
 		let odd = parseInt(sessionStorage.getItem('odd'),10);
