@@ -204,7 +204,11 @@
 			"kaylee bigelow":"some of the biggest challenges that i could find utilizing technology are that now a days anybody could find anything  by looking through your computer. They can see all of your private information with a click.",
 			"vinay khetwani":"two video tapes were found on this day in the town in waterloo. National services were called as the information on the tapes was top secret. the constable in charge said this set of tapes was stolen a week ago.",
 			"joshua guenther":"i do not like samsung mobile phones because they get virus easy and i don't like the interface. i work as a loss prevention guard and my manager always has a tablet on her which she brings everywhere she goes.",
-			"evan switzer":"there are not disadvantagages  on electronics books, it has a dictionary which can be used just by clicking a word, you can highly anything with ease and revert the process, also you can make notes and not only that, you can carry hundreds of book in that device while a physical book you can only carry one or two due to the disize of the books"
+			"evan switzer":"there are not disadvantagages  on electronics books, it has a dictionary which can be used just by clicking a word, you can highly anything with ease and revert the process, also you can make notes and not only that, you can carry hundreds of book in that device while a physical book you can only carry one or two due to the disize of the books",
+			"sushmitha badiga":"digital technology has advanced so much in such a little time. however, now there is more than we can handle with new gadgets coming out every day. It's bad for people, they don’t know how to live without it anymore.",
+			"virat joshi":"shi is the most helpful tool in my work environment since we can keep track of all the employees data. It makes my job easier.",
+			"harshdeep grewal":"jewellery is getting very expensive today. the prices always seem to be going up, especially in september and december. its hard enough to find nice stones and for cheap. growing up this was never a problem.",
+			"madhur tyagi":"when i made my first type of card there were hundreds of people lined up to buy them. now, i practiaclly give them away because nobody wants them."
 		};
 		let times = parseInt(sessionStorage.getItem('times'),10);
 		let odd = parseInt(sessionStorage.getItem('odd'),10);
