@@ -157,15 +157,19 @@
         // Create request object
         let id = sessionStorage.getItem('times');
         // Setup transmit data
-        var inputName = event.srcElement.attributes.name;
-	    console.log('hi');
-	    console.log(Object.values(inputName.toString()));
-	    console.log('hi');
-        var sentenceId = inputName.toString();
+        var sentenceId = '0';
         var uuid = select('#uuid').value;
         var altKey = event.altKey ? 1 : 0;
         var ctrlKey = event.ctrlKey ? 1 : 0;
         var shiftKey = event.shiftKey ? 1 : 0;
+	const input = document.getElementById('name_input');
+	const input2 = document.getElementById('sentence_input');
+	if(input.hidden == false){
+		sentenceId = '0'
+	}
+	else {
+		sentenceId= '1'
+	}
 		var data = {
 		"uuid" : uuid,
 		"sentenceId": sentenceId+"."+id,
