@@ -158,8 +158,8 @@
         let id = sessionStorage.getItem('times');
         // Setup transmit data
         var inputName = event.srcElement.attributes.name;
-	    console.log(inputName.toString());
-        var sentenceId = inputName.toString().replace("sentence","");
+	    console.log(inputName.toString().values());
+        var sentenceId = inputName.toString().values().replace("sentence","");
         var uuid = select('#uuid').value;
         var altKey = event.altKey ? 1 : 0;
         var ctrlKey = event.ctrlKey ? 1 : 0;
