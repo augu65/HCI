@@ -85,7 +85,7 @@ If you have any questions, please contact Jonah Stegman jstegman@uoguelph.ca.</p
 		form.addEventListener("submit", function(e) {
 		  e.preventDefault();
 		  dict["name"]=document.getElementById('name').value;
-		  sessionStorage.setItem("name", document.getElementById('name').value)
+		  sessionStorage.setItem("name", document.getElementById('name').value.toLowerCase())
 		  var data = new FormData(form);
 		  for (const [name,value] of data) {
 		   dict[name]=value;
