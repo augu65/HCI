@@ -159,7 +159,7 @@
         // Setup transmit data
         var inputName = event.srcElement.attributes.name;
 	    console.log(Object.values(inputName.toString()));
-        var sentenceId = inputName.toString().values().replace("sentence","");
+        var sentenceId = inputName.toString();
         var uuid = select('#uuid').value;
         var altKey = event.altKey ? 1 : 0;
         var ctrlKey = event.ctrlKey ? 1 : 0;
