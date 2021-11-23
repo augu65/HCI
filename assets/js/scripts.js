@@ -163,6 +163,8 @@
         var altKey = event.altKey ? 1 : 0;
         var ctrlKey = event.ctrlKey ? 1 : 0;
         var shiftKey = event.shiftKey ? 1 : 0;
+	    console.log(sentenceId);
+	    console.log(inputName);
 		var data = {
 		"uuid" : uuid,
 		"sentenceId": sentenceId+"."+id,
